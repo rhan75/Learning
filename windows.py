@@ -21,9 +21,11 @@ TCN_type = ttk.Combobox(root, height=3, values=TCN, state="readonly")
 TCN_type.current(0)
 TCN_type.pack()
 
-
+def testfunction():
+    pass
 def getNIST():
     print(TCN_entry.get(), TCN_type.get())
+    #Get sql 
 submitButton = Button(root, text='Submit', command=getNIST)
 submitButton.pack()
 
