@@ -1,0 +1,51 @@
+import math
+import socket
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((socket.gethostname(), 1234))
+
+full_msg = ''
+while True:
+    msg = s.recv()
+'''
+HEADER = 64
+PORT = 10000
+FORMAT = 'utf-8'
+DISCONNECT_MESSAGE = 'disconnect!'
+SERVER = '172.31.64.1'
+ADDR = (SERVER, PORT)
+
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client.connect(ADDR)
+
+def send(msg):
+    #message = msg.encode(FORMAT)
+    msg_length = len(msg)
+    if msg_length > HEADER:
+        #break message into 2048 block
+        parts = []
+        i = 0
+        while i < msg_length:
+            if i+HEADER < msg_length:
+                parts.append(msg[i:i+HEADER])
+            else:
+                parts.append(msg[i:msg_length])
+            i += HEADER
+        for part in parts:
+            print(part)
+            message = part.encode(FORMAT)
+            client.send(message)
+    else:
+        message = msg.encode(FORMAT)
+        client.send(message)
+        #send message
+    #send_length = str(msg_length).encode(FORMAT)
+
+while True:
+    msg = input()
+    if msg == 'end':
+        send(DISCONNECT_MESSAGE)
+        break
+    else:
+        send(msg)
+'''

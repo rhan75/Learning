@@ -1,0 +1,18 @@
+body {
+    background-color: #d3e0dc;
+}
+hr {
+    border-style: none;
+    border-color: grey;
+    border-top-style: dotted;
+    border-width: 5px;
+    width: 65px;
+    margin: auto;
+}
+h1 {
+    color: #66BFBF;
+}
+h3 {
+    color: #66BFBF;
+}
+/* Color for H3 & H1 should be #66BFBF

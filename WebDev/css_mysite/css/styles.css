@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 5.5rem;
+    margin: 50px auto 0 auto;
+    color: #66bfbf;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #66bfbf;
+
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+
+    color: #11999e;
+}
+
+
+
+/*------------------------ Class ---------------------*/
+
+.top-container {
+    background-color: #e4f9f5;
+    position: relative;
+    padding-top: 100px;
+}
+
+.middle-container {
+}
+.bottom-container {
+    background-color: #66BFBF;
+
+}
+.top-cloud {
+    position: absolute;
+    right: 500px;
+    top: 70px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 400px;
+    bottom: 200px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px;
+    text-align: left;
+    line-height: 2;
+    
+}
+
+.footer-link {
+    color: #11999e;
+}
+
+#professional {
+    font-weight: normal;
+}
